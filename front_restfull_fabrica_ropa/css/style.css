@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.hide {
+  display: none;
+}
+/****************************** HEADER*/
+.wrap {
+  width: 900px;
+  margin: 20px auto;
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+header {
+  width: 100%;
+  margin-top: 5px;
+}
+.cab {
+  width: 78%;
+  margin: 0 auto;
+}
+nav {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  flex-grow: 1;
+}
+nav ul li a,
+.detalles .acciones li,
+.enlace a {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  text-decoration: none;
+  border: 2px solid rgb(0, 204, 255);
+  color: rgb(56, 118, 189);
+  font-weight: bolder;
+}
+nav ul li a:hover,
+.enlace a:hover {
+  background-color: rgb(0, 204, 255);
+}
+#cliente {
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+}
+section {
+  padding-top: 20px;
+}
+section h2,
+section h4 {
+  color: #9148ba;
+  font-family: sans-serif;
+  font-size: 1.5em;
+}
+section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.btnNuevo {
+  width: 200px;
+  text-align: center;
+  margin: 5px 0;
+}
+.btnNuevo a {
+  display: block;
+  text-decoration: none;
+  color: rgb(129, 138, 177);
+  padding: 10px 30px;
+  border: 2px solid rgb(0, 204, 255);
+  font-weight: bold;
+}
+.btnNuevo a:hover {
+  background-color: rgb(0, 204, 255);
+}
+.tablas {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 3em;
+  margin-top: 20px;
+}
+.tabla_1 {
+  width: 100%;
+}
+table {
+  width: 100%;
+  font-family: sans-serif;
+  color: rgb(188, 132, 249);
+}
+table,
+table td {
+  border: 2px solid rgb(129, 138, 177);
+}
+table th {
+  background-color: rgb(129, 138, 177);
+  color: #fff;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+  padding: 10px 40px;
+}
+td a {
+  text-decoration: none;
+}
+td a:hover {
+  color: rgb(129, 138, 177);
+}
+.ver {
+  color: green;
+}
+.edit {
+  color: rgb(56, 118, 189);
+}
+.eli {
+  color: rgb(245, 131, 104);
+}
+.cancel {
+  color: rgb(237, 137, 174);
+}
+fieldset {
+  background-color: rgba(0, 204, 255, 0.2);
+  padding: 20px 30px;
+  margin-top: 20px;
+  border: 2px solid rgb(0, 204, 255);
+}
+form {
+  display: grid;
+  grid-auto-rows: auto;
+}
+.box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 1.5em;
+}
+.box_radio {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: rgb(56, 118, 189);
+}
+.box_emp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  color: rgb(56, 118, 189);
+}
+.box_radio label {
+  text-align: center;
+}
+.box_radio input {
+  margin-right: 10px;
+}
+.radio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 0.5rem;
+}
+.box label {
+  color: rgb(56, 118, 189);
+  padding-right: 10px;
+  text-align: center;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="checkbox"] {
+  padding: 10px;
+  color: rgb(129, 138, 177);
+}
+
+input[type="checkbox"] {
+  margin-left: 0.5rem;
+}
+select {
+  width: 100%;
+  padding: 4px 10px;
+  color: rgb(129, 138, 177);
+}
+.btnsForm {
+  margin: 10px auto;
+}
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  width: 100px;
+  margin-right: 10px;
+  color: rgb(56, 118, 189);
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(0, 204, 255);
+  border: none;
+}
+input[type="reset"]:hover {
+  cursor: pointer;
+  background-color: rgb(0, 204, 255);
+  border: none;
+  color: rgb(237, 137, 174);
+}
+.box_emp {
+  margin: 0.2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  gap: 0.2rem;
+  color: rgb(56, 118, 189);
+}
+.box_emp > .check {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+.box_emp > input[type="number"],
+.box_emp > input[type="date"],
+.box_emp > .check > input[type="checkbox"] {
+  padding: 2px;
+  vertical-align: middle;
+}
+
+/****************************** CLIENTE*/
+.h3_cliente {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  margin-bottom: 0.5em;
+}
+h3 {
+  display: block;
+  width: 16.5%;
+  padding: 10px 20px;
+  border: 2px solid rgb(0, 204, 255);
+  text-decoration: none;
+  color: rgb(56, 118, 189);
+  font-weight: bold;
+}
+.user {
+  margin-top: 0.3em;
+  color: rgba(182, 182, 192, 0.8);
+  text-align: right;
+}
+.logo {
+  text-align: center;
+  margin-right: 1.5em;
+}
+.logo h4 {
+  margin: 0 auto;
+  padding: 25px 5px;
+  border: 3px solid #9148ba;
+  border-radius: 50%;
+  color: rgb(188, 132, 249);
+}
+.inUl {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.inUl li a {
+  padding: 4.5px 40px;
+}
+.tablas2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 3em;
+  margin-top: 20px;
+  text-align: center;
+}
+.tablas2 table th {
+  background-color: #808091;
+  color: #fff;
+}
+/***********************************************LOGIN*/
+.msj {
+  display: block;
+  width: 100%;
+}
+.msj > h3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: red;
+  border: none;
+}
+/******************************************************DETALLES**/
+.detalles {
+  width: 90%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  color: rgb(188, 132, 249);
+}
+.acciones ul li {
+  list-style: none;
+  text-align: center;
+}
+.reservas {
+  display: grid;
+  grid-template-rows: 1fr 0.1fr 3fr;
+  gap: 0.5rem;
+}
+.reserCant {
+  display: grid;
+  grid-template-rows: 0.3fr 0.5fr;
+  gap: 1rem;
+  text-align: center;
+}
+.quedan {
+  justify-content: center;
+  border: 2px solid grey;
+}
+.quedan p {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1.3rem;
+}
+.cantidad {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: aqua;
+}
+.cantidad input {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+.img img {
+  width: 100%;
+}
+span {
+  font-weight: lighter;
+  color: rgb(245, 131, 104);
+}
+.bien {
+  color: rgb(188, 132, 249);
+}
+.mal {
+  text-transform: uppercase;
+  color: red;
+}
+/******************************************************DETALLES**/
+
+#error {
+  width: 50%;
+  margin: 8rem auto;
+  text-align: center;
+}
+.enlace {
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 10%;
+}
